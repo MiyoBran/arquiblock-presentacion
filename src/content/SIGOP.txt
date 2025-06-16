@@ -1,0 +1,3 @@
+# Propuesta del Sistema de Información SIGOP
+
+(Nombre, objetivo, actores, componentes, decisiones técnicas)

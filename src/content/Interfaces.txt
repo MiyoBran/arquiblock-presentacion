@@ -1,0 +1,24 @@
+# Interfaces
+
+The designs have been generated for your construction management system:
+
+# Nombre del diagrama o interfaz
+Archivo: production-schedule.html
+Production Schedule: Calendar view of active projects with projected progress dates.
+
+# Nombre del diagrama o interfaz
+Archivo: delivery-schedule.html
+Delivery Schedule: Schedule of deliveries per project and date, including vehicle assignments.
+
+# Nombre del diagrama o interfaz
+Archivo: project-dashboard.html
+Project Dashboard: Real-time overview of project status including progress, material consumption, costs, and key dates.
+
+# Nombre del diagrama o interfaz
+Archivo: budget-tracking.html
+Budget Tracking: Comparison of initial budget versus actual expenditures, tracking profitability and cost variances.
+
+
+# Nombre del diagrama o interfaz
+Archivo: progress-updates.html
+Progress Updates: Interface for on-site staff to report progress, material usage, hours, and issues.

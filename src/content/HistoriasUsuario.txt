@@ -1,0 +1,71 @@
+# Historias de Usuario
+
+Historia 1: Carga de Avances desde la Obra
+Como jefe de obra
+quiero registrar desde el celular el avance de cada etapa de construcción, el consumo de materiales y las horas trabajadas
+para que el equipo administrativo y de producción tenga visibilidad en tiempo real y sin errores.
+Criterios de Aceptación:
+Puedo seleccionar el proyecto y la etapa correspondiente (ej. platea, muros, techo, etc.).
+
+
+Puedo cargar el % de avance y observaciones.
+
+
+Puedo ingresar cuántos bloques u otros materiales se usaron ese día.
+
+
+Puedo registrar la asistencia y horas del personal. (!)
+
+
+Puedo subir fotos como evidencia del avance. (!)
+
+
+La información se actualiza automáticamente en el Panel de Control del proyecto.
+
+
+
+Historia 2: Panel de Control del Proyecto
+Como administrador general
+Quiero ver en un panel todos los indicadores clave del proyecto (avance físico, costos, pagos, fechas)
+Para tomar decisiones operativas y financieras informadas.
+Criterios de Aceptación:
+El panel muestra una barra de progreso por etapa de obra.
+
+
+Puedo ver el consumo real de materiales vs. lo presupuestado.(!)
+
+
+Puedo ver el total acumulado de horas de personal.
+
+
+El sistema calcula y muestra los costos acumulados.(!)
+
+
+Se listan fechas clave como pagos del cliente, entregas, visitas técnicas.
+
+
+Recibo alertas si hay desvíos de costos o demoras (ej. más del 10% de lo previsto).
+
+
+
+Historia 3: Planificación de Producción
+Como responsable de producción,
+Quiero ver qué cantidad de bloques necesita cada obra para la próxima semana
+Para organizar la fabricación sin faltantes ni urgencias de último momento.
+Criterios de Aceptación:
+Puedo ver un calendario con todas las obras activas y sus necesidades proyectadas.
+
+
+El sistema calcula automáticamente los bloques requeridos según el avance planificado.
+
+
+Puedo ver el stock disponible en el depósito.
+
+
+El sistema genera un plan de producción semanal por prioridad.
+
+
+Recibo alertas si hay faltante de stock para alguna obra prioritaria.
+
+
+

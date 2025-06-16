@@ -1,0 +1,101 @@
+﻿Prompt detallado que pueden copiar y pegar. Solo necesitarán modificar la sección de "Contenido Específico de la Página".
+Prompt para Diseño de Página Web del Proyecto ArquiBlock
+Rol: Eres un desarrollador Front-End experto, especializado en la creación de sitios web estáticos, limpios y profesionales utilizando HTML5 y Bootstrap 5. Tu tarea es generar el código completo para una página específica de un trabajo universitario.
+Contexto General del Proyecto:
+El sitio web es para presentar el trabajo integrador de la materia "Sistemas y Organizaciones". El caso de estudio es "ArquiBlock", una empresa de construcción. El tono del sitio debe ser profesional, académico y moderno. La web completa tendrá 4 páginas principales: Diagnóstico, Solución, Interfaz de Usuario y Metodología.
+Tarea Específica:
+Genera el código HTML completo para la página [NOMBRE_DEL_ARCHIVO.html] y el código CSS base que se guardará en style.css. La página debe ser completamente responsive.
+1. Guía de Estilo Visual (para style.css)
+Aplica estrictamente las siguientes directrices de diseño para mantener la consistencia en todo el sitio.
+a) Paleta de Colores:
+● Primario (Azul Oscuro/Corporativo): #2c3e50 (para la barra de navegación, títulos principales y pie de página).
+● Secundario (Gris Claro/Fondo): #ecf0f1 (para el fondo de las secciones o tarjetas).
+● Acento (Naranja/Llamada a la acción): #f39c12 (para botones, enlaces destacados y elementos que necesiten resaltar).
+● Texto Principal: #34495e (un gris oscuro, más suave que el negro puro).
+● Texto Secundario/Blanco: #ffffff (para usar sobre fondos oscuros).
+b) Tipografía (utilizando Google Fonts):
+● Encabezados (<h1>, <h2>, <h3>): Usa la fuente 'Montserrat'.
+○ h1: 48px, font-weight: 700.
+○ h2: 36px, font-weight: 600.
+○ h3: 24px, font-weight: 600.
+● Cuerpo de Texto (<p>, <li>, etc.): Usa la fuente 'Roboto'.
+○ p: 18px, line-height: 1.7.
+c) Estilos de Componentes:
+● Barra de Navegación (Navbar): Fondo con el color Primario (#2c3e50), enlaces en color Blanco (#ffffff). El logo o título principal debe destacar.
+● Botones: Fondo con el color de Acento (#f39c12), texto en Blanco. Al pasar el mouse (:hover), deben oscurecerse ligeramente.
+● Tarjetas (Cards): Para encerrar secciones de contenido, usa un fondo blanco o Gris Claro (#ecf0f1), con bordes redondeados (border-radius: 8px) y una sombra sutil (box-shadow: 0 4px 8px rgba(0,0,0,0.1)).
+● Imágenes y Diagramas: Deben estar centradas, tener un 100% de ancho máximo para que sean responsives, y opcionalmente un borde sutil y la misma sombra que las tarjetas.
+● Pie de Página (Footer): Fondo con el color Primario (#2c3e50), texto centrado en color Gris Claro.
+2. Estructura y Contenido HTML para [NOMBRE_DEL_ARCHIVO.html]
+El HTML debe usar la estructura de Bootstrap 5 (contenedores, filas, columnas) y etiquetas semánticas.
+● <head>: Incluye los metadatos, el título de la página, el enlace a la CDN de Bootstrap 5 y el enlace al archivo local style.css. También importa las fuentes 'Montserrat' y 'Roboto' desde Google Fonts.
+● <body>:
+○ <header>: Contendrá la barra de navegación (Navbar) consistente en todas las páginas. El navbar debe tener enlaces a index.html, diagnostico.html, solucion.html, interfaz-usuario.html y metodologia.html.
+○ <main>: Usando <div class="container my-5">, aquí irá todo el contenido específico de la página.
+○ <footer>: Contendrá el pie de página, también consistente. Debe incluir los nombres de los integrantes y la materia.
+Contenido Específico (Reemplazar esta sección según la página a crear):
+
+HTML
+
+
+<section class="text-center mb-5">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="display-4">Título Principal de la Página</h1>
+            <p class="lead">Un subtítulo o breve descripción de lo que se encontrará en esta página.</p>
+        </div>
+    </div>
+</section>
+
+<section class="mb-5">
+    <div class="row">
+        <div class="col-12">
+            <h2><i class="fas fa-search"></i> Título de la Primera Sección</h2>
+            <hr>
+            <p>Aquí va el texto introductorio de la sección. Explica el contexto del diagrama o la tabla que se mostrará a continuación.</p>
+            <div class="text-center bg-light p-3 rounded shadow-sm">
+                <img src="../assets/images/nombre-del-diagrama.png" class="img-fluid" alt="Descripción del diagrama">
+                <p class="mt-2 fst-italic">Leyenda o explicación breve de la imagen.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mb-5">
+    <div class="row">
+        <div class="col-12">
+            <h2><i class="fas fa-balance-scale"></i> Título de la Segunda Sección</h2>
+            <hr>
+            <p>Aquí va el texto que introduce la tabla comparativa, explicando los criterios de comparación.</p>
+            <table class="table table-bordered table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Criterio</th>
+                        <th>Opción A</th>
+                        <th>Opción B</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Costo</td>
+                        <td>Dato 1</td>
+                        <td>Dato 2</td>
+                    </tr>
+                    <tr>
+                        <td>Viabilidad</td>
+                        <td>Dato 3</td>
+                        <td>Dato 4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+
+3. Formato de Salida
+Por favor, proporciona el resultado en dos bloques de código separados y claramente etiquetados:
+1. Código para [NOMBRE_DEL_ARCHIVO.html]
+2. Código para style.css
+Añade comentarios en el CSS para explicar qué hace cada regla, facilitando su mantenimiento por parte del equipo.
+(Nota: Para los íconos como <i class="fas fa-search"></i>, necesitarás incluir el enlace a Font Awesome en el <head>).
