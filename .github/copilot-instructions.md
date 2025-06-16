@@ -9,5 +9,13 @@ This project is a Vite + React + TypeScript web presentation for the ArquiBlock 
 - Si los archivos `.txt` están incompletos, priorizar la carga y edición de esos archivos antes de continuar con la generación de componentes o páginas.
 - Cuando los archivos estén completos, usar su contenido para poblar las secciones web de forma estructurada y profesional.
 
+# DEPLOY EN GITHUB PAGES
+- Cuando el contenido y la estructura estén listos, agregar a `package.json` los scripts:
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+- Instalar el paquete gh-pages como devDependency.
+- Ejecutar `npm run deploy` para publicar la web en GitHub Pages.
+- Verificar que la rama `gh-pages` esté seleccionada como fuente en la configuración de Pages del repositorio.
+
 # NOTA
-Si retomas este proyecto, revisa primero los archivos de `src/content/` y espera a que estén completos antes de avanzar con la generación de la web final.
+Si retomas este proyecto, revisa primero los archivos de `src/content/` y espera a que estén completos antes de avanzar con la generación de la web final. Cuando todo esté listo, sigue las instrucciones de deploy para publicar la web.

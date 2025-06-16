@@ -29,4 +29,33 @@ Luego, abre el navegador en la URL que aparece en la terminal.
 
 ---
 
+## Publicación en GitHub Pages
+
+Puedes publicar esta web directamente desde GitHub usando GitHub Pages:
+
+1. Construye el sitio:
+   ```bash
+   npm run build
+   ```
+2. Instala el paquete gh-pages:
+   ```bash
+   npm install --save-dev gh-pages
+   ```
+3. Agrega estos scripts a tu `package.json`:
+   ```json
+   "scripts": {
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d dist"
+   }
+   ```
+4. Ejecuta:
+   ```bash
+   npm run deploy
+   ```
+5. En la configuración del repositorio en GitHub, sección **Pages**, selecciona la rama `gh-pages` como fuente.
+
+La web estará disponible en: `https://miyobran.github.io/arquiblock-presentacion/`
+
+---
+
 Este proyecto busca ser visualmente atractivo, moderno y fácil de navegar, ideal para presentaciones académicas.
