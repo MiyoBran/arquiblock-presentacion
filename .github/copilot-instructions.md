@@ -39,9 +39,9 @@ Este archivo define los hitos y tareas pendientes para la mejora visual y funcio
 - [x] Implementar transiciones suaves en botones, tarjetas e imágenes.
 
 ### Hito 7: Botón de Descarga Destacado
-- [ ] Rediseñar el botón de descarga PDF para mayor peso visual.
-- [ ] Aplicar efectos de hover y active para mejor feedback.
-- [ ] Añadir icono representativo.
+- [x] Rediseñar el botón de descarga PDF para mayor peso visual.
+- [x] Aplicar efectos de hover y active para mejor feedback.
+- [x] Añadir icono representativo.
 
 ### Hito 8: Adaptación Responsiva y Refinamiento
 - [ ] Revisar y mejorar la responsividad para dispositivos móviles (navegación, tarjetas, imágenes).

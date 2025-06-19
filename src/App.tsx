@@ -15,6 +15,7 @@ import InterfazPresupuestosCostos from './assets/interfaces/Interfaz-Presupustos
 import InterfazProduccionObra from './assets/interfaces/Interfaz-Produccion-Obra.png'
 import InterfazLogistica from './assets/interfaces/Interfaz-Logistica.png'
 
+
 const PDF_URL = import.meta.env.BASE_URL + 'Informe-Final-ArquiBlock.pdf'
 
 const sections = [
@@ -77,13 +78,13 @@ const sections = [
 						la entrega de la obra.
 					</li>
 				</ul>
-				<div style={{ textAlign: 'center', margin: '2rem 0' }}>
-					<a
+				<div style={{ textAlign: 'center', margin: '2rem 0' }}>					<a
 						href={PDF_URL}
 						download
 						className="pdf-download-btn"
+						aria-label="Descargar el informe completo en formato PDF"
 					>
-						Descargar Informe Final (PDF)
+						Descargar Informe Completo
 					</a>
 				</div>
 			</div>
@@ -451,13 +452,13 @@ const sections = [
 					sostenible, optimizar sus recursos y, finalmente, consolidar su posición
 					como una marca de referencia en el mercado de la construcción modular.
 				</p>
-				<div style={{ marginTop: '2rem' }}>
-					<a
+				<div style={{ marginTop: '2rem' }}>					<a
 						href={PDF_URL}
 						download
 						className="pdf-link"
+						aria-label="Descargar el informe final en formato PDF"
 					>
-						Descargar Informe Final (PDF)
+						📄 Obtener Informe Final
 					</a>
 				</div>
 			</>
@@ -482,20 +483,27 @@ function App() {
 		setModalAlt(alt)
 		setModalIsOpen(true)
 	}
-	const closeModal = () => setModalIsOpen(false)
-
-	// Renderizado de imágenes con lightbox para secciones Diagramas e Interfaces
+	const closeModal = () => setModalIsOpen(false)	// Renderizado de imágenes con lightbox para secciones Diagramas e Interfaces
 	const renderWithLightbox = (img: string, alt: string) => (
-		<img
-			src={img}
-			alt={alt}
-			className="interface-img"
+		<button
 			onClick={() => openModal(img, alt)}
-			style={{ cursor: 'zoom-in' }}
-			role="button"
-			tabIndex={0}
+			style={{ 
+				background: 'none', 
+				border: 'none', 
+				padding: 0, 
+				cursor: 'zoom-in',
+				display: 'block',
+				margin: '1.5rem auto 1rem auto'
+			}}
 			aria-label={`Ampliar imagen: ${alt}`}
-		/>
+		>
+			<img
+				src={img}
+				alt={alt}
+				className="interface-img"
+				style={{ cursor: 'zoom-in', margin: 0 }}
+			/>
+		</button>
 	)
 
 	return (
@@ -609,9 +617,8 @@ function App() {
 						<p><strong>Profesores:</strong> Rodrigo René Cura – Leonardo Morales</p>
 					</div>
 					<div className="footer-right">
-						<p><strong>Fecha:</strong> 19 de junio de 2025</p>
-						<a href={PDF_URL} download className="footer-download-link">
-							📄 Descargar PDF
+						<p><strong>Fecha:</strong> 19 de junio de 2025</p>						<a href={PDF_URL} download className="footer-download-link" aria-label="Descargar informe completo">
+							📄 Informe PDF
 						</a>
 					</div>
 				</div>
