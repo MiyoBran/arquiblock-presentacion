@@ -1,0 +1,51 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules/
+dist/
+build/
+dist-ssr/
+*.local
+.env
+.env.*
+
+# Editor directories and files
+.vscode/
+.history/
+.idea/
+*.iml
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Cursor (https://www.cursor.so/)
+.cursor/
+
+# Mac/Windows system files
+Thumbs.db
+
+# Editor backups
+*~
+*.swp
+*.swo
+
+# Misc
+coverage/
+
+# Optional: ignore local assets if needed
+# src/assets/diagramas/
+# src/assets/interfaces/
