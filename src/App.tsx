@@ -15,7 +15,7 @@ import InterfazPresupuestosCostos from './assets/interfaces/Interfaz-Presupustos
 import InterfazProduccionObra from './assets/interfaces/Interfaz-Produccion-Obra.png'
 import InterfazLogistica from './assets/interfaces/Interfaz-Logistica.png'
 
-const PDF_URL = '/Informe-Final-ArquiBlock.pdf'
+const PDF_URL = import.meta.env.BASE_URL + 'Informe-Final-ArquiBlock.pdf'
 
 const sections = [
 	{
