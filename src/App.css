@@ -116,18 +116,27 @@
   margin-bottom: 2rem;
 }
 .diagramas-grid div {
-  flex: 1 1 250px;
-  max-width: 320px;
+  flex: 1 1 350px;
+  max-width: 600px;
   background: #f8fafc;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  padding: 1rem;
+  padding: 1.5rem;
   text-align: center;
 }
-.diagramas-grid img {
-  max-width: 100%;
-  height: auto;
+.diagramas-grid img.interface-img {
+  max-width: 540px;
+  width: 100%;
   margin-bottom: 0.5rem;
+}
+/* Para los diagramas de secuencia, que estén en columna */
+.diagramas-grid.sequence {
+  flex-direction: column;
+  align-items: center;
+}
+/* Efecto hover más grande solo para diagramas de secuencia */
+.diagramas-grid.sequence img.interface-img:hover {
+  transform: scale(1.35);
 }
 .interface-img {
   display: block;
@@ -136,6 +145,13 @@
   margin: 1.5rem auto 1rem auto;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+  transition: transform 0.25s cubic-bezier(.4,2,.6,1), box-shadow 0.2s;
+  cursor: zoom-in;
+}
+.interface-img:hover {
+  transform: scale(1.12);
+  box-shadow: 0 4px 24px rgba(37,99,235,0.18);
+  z-index: 2;
 }
 .historias-usuario > div {
   background: #f8fafc;

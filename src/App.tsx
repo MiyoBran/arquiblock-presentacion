@@ -222,20 +222,27 @@ const sections = [
 				<h2>Diagramas de Casos de Uso</h2>
 				<div className="diagramas-grid">
 					<div>
-						<img
-							src={DCUAvanceObra}
-							alt="Caso de Uso: Avance de Obra"
-						/>
+						<a href={DCUPlanificacionProduccion} target="_blank" rel="noopener noreferrer">
+							<img
+								src={DCUPlanificacionProduccion}
+								alt="Caso de Uso: Planificación de la Producción"
+								className="interface-img"
+							/>
+						</a>
 						<p>
-							Gestión de Avances de Obra: El administrador valida el avance que el
-							jefe de obra cargó al sistema (materiales, horas, foto).
+							Planificación de la Producción: El jefe de obra ve obras activas; el
+							administrador planifica producción, actualiza stock y alerta
+							desfasajes.
 						</p>
 					</div>
 					<div>
-						<img
-							src={DCUControlRentabilidad}
-							alt="Caso de Uso: Control de Rentabilidad"
-						/>
+						<a href={DCUControlRentabilidad} target="_blank" rel="noopener noreferrer">
+							<img
+								src={DCUControlRentabilidad}
+								alt="Caso de Uso: Control de Rentabilidad"
+								className="interface-img"
+							/>
+						</a>
 						<p>
 						 Control de Rentabilidad: El responsable administrativo registra costos y
 						 presupuestos; el administrador puede generar reportes y visualizar
@@ -243,44 +250,55 @@ const sections = [
 						</p>
 					</div>
 					<div>
-						<img
-							src={DCUPlanificacionProduccion}
-							alt="Caso de Uso: Planificación de la Producción"
-						/>
+						<a href={DCUAvanceObra} target="_blank" rel="noopener noreferrer">
+							<img
+								src={DCUAvanceObra}
+								alt="Caso de Uso: Avance de Obra"
+								className="interface-img"
+							/>
+						</a>
 						<p>
-							Planificación de la Producción: El jefe de obra ve obras activas; el
-							administrador planifica producción, actualiza stock y alerta
-							desfasajes.
+							Gestión de Avances de Obra: El administrador valida el avance que el
+							jefe de obra cargó al sistema (materiales, horas, foto).
 						</p>
 					</div>
 				</div>
 				<h2>Diagramas de Secuencia</h2>
-				<div className="diagramas-grid">
+				<div className="diagramas-grid sequence">
 					<div>
-						<img
-							src={DSAvanceObra}
-							alt="Secuencia: Avance de Obra"
-						/>
+						<a href={DSAvanceObra} target="_blank" rel="noopener noreferrer">
+							<img
+								src={DSAvanceObra}
+								alt="Secuencia: Avance de Obra"
+								className="interface-img"
+							/>
+						</a>
 						<p>
 							Registro de Avance de Obra: Pasos desde iniciar sesión hasta guardar
 							avance con éxito.
 						</p>
 					</div>
 					<div>
-						<img
-							src={DSControlRentabilidad}
-							alt="Secuencia: Control de Rentabilidad"
-						/>
+						<a href={DSControlRentabilidad} target="_blank" rel="noopener noreferrer">
+							<img
+								src={DSControlRentabilidad}
+								alt="Secuencia: Control de Rentabilidad"
+								className="interface-img"
+							/>
+						</a>
 						<p>
 							Creación de Presupuesto y Análisis de Rentabilidad: Desde iniciar
 							sesión, completar presupuesto, hasta análisis de rentabilidad.
 						</p>
 					</div>
 					<div>
-						<img
-							src={DSPlanificacionProduccion}
-							alt="Secuencia: Planificación de la Producción"
-						/>
+						<a href={DSPlanificacionProduccion} target="_blank" rel="noopener noreferrer">
+							<img
+								src={DSPlanificacionProduccion}
+								alt="Secuencia: Planificación de la Producción"
+								className="interface-img"
+							/>
+						</a>
 						<p>
 							Planificación de la Producción Semanal: Visualización de alertas,
 							creación de plan y confirmación de guardado.
@@ -296,41 +314,51 @@ const sections = [
 			<>
 				<h2>Interfaces de Usuario</h2>
 				<h3>Historia 1: Carga de Avances</h3>
-				<img
-					src={InterfazAvanceObra}
-					alt="Interfaz Avance de Obra"
-					className="interface-img"
-				/>
+				<a href={InterfazAvanceObra} target="_blank" rel="noopener noreferrer">
+					<img
+						src={InterfazAvanceObra}
+						alt="Interfaz Avance de Obra"
+						className="interface-img"
+					/>
+				</a>
 				<p>
 					Permite al Jefe de Obra registrar el avance diario directamente desde la
 					obra.
 				</p>
 				<h3>Historia 2: Panel de Control</h3>
-				<img
-					src={InterfazPanelControl}
-					alt="Interfaz Panel de Control"
-					className="interface-img"
-				/>
-				<img
-					src={InterfazPresupuestosCostos}
-					alt="Interfaz Presupuestos y Costos"
-					className="interface-img"
-				/>
+				<a href={InterfazPanelControl} target="_blank" rel="noopener noreferrer">
+					<img
+						src={InterfazPanelControl}
+						alt="Interfaz Panel de Control"
+						className="interface-img"
+					/>
+				</a>
+				<a href={InterfazPresupuestosCostos} target="_blank" rel="noopener noreferrer">
+					<img
+						src={InterfazPresupuestosCostos}
+						alt="Interfaz Presupuestos y Costos"
+						className="interface-img"
+					/>
+				</a>
 				<p>
 					Solución para el Administrador: Panel de Control (vista 360°) y
 					Presupuesto/Costos (análisis de rentabilidad).
 				</p>
 				<h3>Historia 3: Planificación y Logística</h3>
-				<img
-					src={InterfazProduccionObra}
-					alt="Interfaz Producción Obra"
-					className="interface-img"
-				/>
-				<img
-					src={InterfazLogistica}
-					alt="Interfaz Logística"
-					className="interface-img"
-				/>
+				<a href={InterfazProduccionObra} target="_blank" rel="noopener noreferrer">
+					<img
+						src={InterfazProduccionObra}
+						alt="Interfaz Producción Obra"
+						className="interface-img"
+					/>
+				</a>
+				<a href={InterfazLogistica} target="_blank" rel="noopener noreferrer">
+					<img
+						src={InterfazLogistica}
+						alt="Interfaz Logística"
+						className="interface-img"
+					/>
+				</a>
 				<p>
 					Herramientas para el Responsable de Producción: planificación de
 					fabricación y coordinación de entregas.
