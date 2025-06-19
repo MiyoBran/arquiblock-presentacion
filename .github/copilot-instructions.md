@@ -25,14 +25,14 @@ Este archivo define los hitos y tareas pendientes para la mejora visual y funcio
 - [x] Aplicar tema semi-oscuro coherente a todo el sitio para unificar la experiencia visual.
 
 ### Hito 4: Tarjetas y Contenedores
-- [ ] Aplicar efectos sutiles de sombra y bordes redondeados a todas las tarjetas y contenedores.
-- [ ] Usar bordes y espaciado consistente para separar secciones lógicas.
+- [x] Aplicar efectos sutiles de sombra y bordes redondeados a todas las tarjetas y contenedores.
+- [x] Usar bordes y espaciado consistente para separar secciones lógicas.
 
 ### Hito 5: Diagramas e Imágenes
 - [x] Implementar lightbox para imágenes (react-modal).
-- [ ] Aplicar bordes redondeados y sombras a todas las imágenes.
-- [ ] Mejorar disposición en cuadrícula de los diagramas con CSS Grid.
-- [ ] Añadir efectos sutiles de hover y transición.
+- [x] Aplicar bordes redondeados y sombras a todas las imágenes.
+- [x] Mejorar disposición en cuadrícula de los diagramas con CSS Grid.
+- [x] Añadir efectos sutiles de hover y transición.
 
 ### Hito 6: Animaciones y Micro-interacciones
 - [x] Añadir animación de fadeIn para el cambio entre secciones (Framer Motion).
