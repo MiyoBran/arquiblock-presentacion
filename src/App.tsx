@@ -54,7 +54,7 @@ const sections = [
 					prefabricadas livianas tradicionales gracias a la solidez y excelentes
 					propiedades de aislación de su sistema constructivo.
 				</p>
-				<h3>Objetivo</h3>
+				<h3 className="with-icon">Objetivo</h3>
 				<p>
 					El objetivo principal fue aplicar los conocimientos teóricos de la
 					materia en un caso real, realizando un análisis exhaustivo de una
@@ -62,7 +62,7 @@ const sections = [
 					estratégicas, y proponer el diseño de un Sistema de Información (SI) que
 					brinde una solución integral a dichos problemas.
 				</p>
-				<h3>Metodología de Trabajo</h3>
+				<h3 className="with-icon">Metodología de Trabajo</h3>
 				<ul className="no-bullet">
 					<li>
 						<strong>Entrevista Semiestructurada:</strong> Se realizó una entrevista
@@ -189,7 +189,7 @@ const sections = [
 					producción, con información en tiempo real sobre proyectos, producción,
 					logística, avances y costos
 				</p>
-				<h3>Módulos Principales</h3>
+				<h3 className="with-icon">Módulos Principales</h3>
 				<ul className="no-bullet">
 					<li>Sincronización Producción–Obra</li>
 					<li>Logística de Entregas</li>
@@ -197,7 +197,7 @@ const sections = [
 					<li>Presupuesto y Seguimiento de Costos</li>
 					<li>Carga de Avances en Obra</li>
 				</ul>
-				<h3>Actores</h3>
+				<h3 className="with-icon">Actores</h3>
 				<ul className="no-bullet">
 					<li>Administrador General</li>
 					<li>Responsable de Producción</li>

@@ -622,10 +622,10 @@
 .presentation-content ul li:hover,
 .presentation-content ol li:hover {
   background: rgba(253,126,20,0.08);
-  transform: translateX(12px);
-  padding-left: 1rem;
+  transform: translateX(8px);
+  padding-left: 0.5rem;
   color: var(--color-accent);
-  box-shadow: 0 2px 8px rgba(253,126,20,0.15);
+  border-radius: 4px;
 }
 
 /* Animación de pulsación sutil para botones importantes */
@@ -850,5 +850,340 @@
   .interface-img:hover,
   .presentation-nav button:hover {
     transform: none;
+  }
+}
+
+/* ========= REFINAMIENTOS VISUALES Y MEJORAS RESPONSIVAS - HITO 8 ========= */
+
+/* Configuración de listas sin marcadores visibles para diseño limpio */
+.presentation-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.presentation-content ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Iconos para elementos específicos */
+.historias-usuario > div h3::before {
+  content: "👤";
+  margin-right: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.presentation-content h3.with-icon {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.presentation-content h3.with-icon::before {
+  content: "📋";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+/* Iconos específicos por contexto */
+.presentation-content h3.with-icon:nth-of-type(1)::before { content: "🎯"; }
+.presentation-content h3.with-icon:nth-of-type(2)::before { content: "🔧"; }
+.presentation-content h3.with-icon:nth-of-type(3)::before { content: "🏗️"; }
+.presentation-content h3.with-icon:nth-of-type(4)::before { content: "👥"; }
+
+.presentation-content h3.with-icon:hover::before {
+  transform: scale(1.2) rotate(10deg);
+}
+
+/* Decoradores visuales adicionales */
+.presentation-content blockquote {
+  border-left: 4px solid var(--color-accent);
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  background: rgba(253,126,20,0.05);
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  position: relative;
+}
+
+.presentation-content blockquote::before {
+  content: "\201C";
+  position: absolute;
+  left: -0.2rem;
+  top: -0.5rem;
+  font-size: 3rem;
+  color: var(--color-accent);
+  opacity: 0.3;
+}
+
+/* Separadores visuales mejorados */
+.presentation-content hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+  margin: 2rem 0;
+  position: relative;
+}
+
+.presentation-content hr::after {
+  content: "✦";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #2c3034;
+  color: var(--color-accent);
+  padding: 0 1rem;
+  font-size: 1.2rem;
+}
+
+/* Mejoras responsivas adicionales */
+
+/* Breakpoint para tablets pequeñas */
+@media (max-width: 900px) {
+  .presentation-container {
+    margin: 1rem auto;
+    padding: 1.5rem;
+    max-width: 95%;
+  }
+  
+  .presentation-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .diagramas-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+}
+
+/* Breakpoint para móviles grandes */
+@media (max-width: 768px) {
+  .presentation-nav {
+    gap: 0.5rem;
+  }
+  
+  .presentation-nav button {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+    .presentation-content h3 {
+    padding-left: 1.5rem;
+    font-size: 1.1rem;
+  }
+  
+  .presentation-content ul li {
+    padding-left: 1.5rem;
+  }
+  
+  .historias-usuario > div {
+    padding: 1.2rem 1.5rem;
+  }
+}
+
+/* Breakpoint para móviles pequeños */
+@media (max-width: 480px) {
+  .presentation-container {
+    margin: 1rem;
+    padding: 1.5rem 1rem;
+  }
+  
+  .presentation-header h1 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+  
+  .presentation-nav button {
+    font-size: 0.95rem;
+    padding: 0.8rem 0.5rem;
+  }
+  
+  .portada-impacto {
+    padding: 1.5rem 1rem;
+  }
+  
+  .portada-impacto h2 {
+    font-size: 1.6rem;
+  }
+}
+
+/* Mejoras en la navegación para tablets */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .presentation-nav {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    gap: 0.8rem;
+  }
+  
+  .presentation-nav button {
+    padding: 0.8rem 1rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Indicadores visuales mejorados para títulos principales */
+.presentation-content h2.main-title {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.presentation-content h2.main-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 2rem;
+  background: var(--color-accent);
+  border-radius: 2px;
+}
+
+/* Separadores visuales entre secciones */
+.presentation-content > * + h2 {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #495057;
+}
+
+.presentation-content > h2:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+/* Efectos hover mejorados para elementos interactivos */
+.presentation-content strong {
+  color: var(--color-accent);
+  transition: color 0.3s ease;
+}
+
+.presentation-content strong:hover {
+  color: #fff;
+}
+
+/* Mejoras en el espaciado y ritmo visual */
+.presentation-content p + p {
+  margin-top: 1.2rem;
+}
+
+.presentation-content ul + p,
+.presentation-content ol + p {
+  margin-top: 1.5rem;
+}
+
+.presentation-content h3 + ul,
+.presentation-content h3 + ol {
+  margin-top: 0.8rem;
+}
+
+/* Efectos de entrada escalonados para elementos de contenido */
+.presentation-content > *:nth-child(odd) {
+  animation-delay: 0.1s;
+}
+
+.presentation-content > *:nth-child(even) {
+  animation-delay: 0.2s;
+}
+
+/* Mejoras en los contrastes y legibilidad para párrafos largos */
+.presentation-content .detailed-text {
+  color: #e9ecef;
+  line-height: 1.7;
+}
+
+.presentation-content .list-item-enhanced {
+  color: #e9ecef;
+  line-height: 1.6;
+}
+
+/* Indicadores de estado y feedback visual mejorados */
+.presentation-nav button:focus-visible {
+  box-shadow: 0 0 0 3px rgba(253,126,20,0.3), 0 2px 8px rgba(253,126,20,0.12);
+}
+
+.presentation-nav button.active::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background: var(--color-accent);
+  border-radius: 50%;
+}
+
+/* Mejoras en la progresión visual del indicador */
+.progress-indicator.enhanced {
+  position: relative;
+}
+
+.progress-indicator.enhanced::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+  opacity: 0.5;
+}
+
+/* Refinamientos en el footer con decoración superior */
+.presentation-footer.decorated {
+  position: relative;
+}
+
+.presentation-footer.decorated::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 2px;
+  background: var(--color-accent);
+  border-radius: 1px;
+}
+
+/* Optimizaciones adicionales para dispositivos táctiles */
+@media (hover: none) and (pointer: coarse) {
+  .presentation-nav button {
+    min-height: 44px;
+    padding: 1rem 1.5rem;
+  }
+  
+  .interface-img {
+    border: 2px solid var(--color-accent);
+  }
+  
+  .pdf-download-btn,
+  .pdf-link,
+  .footer-download-link {
+    min-height: 44px;
+  }
+}
+
+/* Reducir animaciones en conexiones lentas */
+@media (prefers-reduced-data: reduce) {
+  .presentation-content > * {
+    animation: none;
+  }
+  
+  .diagramas-grid > div {
+    animation: none;
+  }
+  
+  .portada-impacto-float {
+    animation: none;
   }
 }
