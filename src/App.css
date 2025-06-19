@@ -87,7 +87,8 @@
 
 .presentation-content ul {
   margin-left: 1.5rem;
-  list-style: disc;
+  list-style: none;
+  padding-left: 0;
 }
 
 .pdf-download-btn, .pdf-link {
