@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Integrador: Análisis del Caso ArquiBlock</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        h1, h2, h3, h4, .nav-link {
+            font-family: 'Poppins', sans-serif;
+        }
+        .section-card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            padding: 2rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        .nav-link.active {
+            color: #3b82f6; /* Tailwind's blue-500 */
+            font-weight: 700;
+            border-bottom: 2px solid #3b82f6;
+        }
+        .diagram-container {
+            border: 1px solid #e5e7eb;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- HEADER AND TEAM INFO -->
+    <header class="bg-white py-8 border-b">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900">Trabajo Integrador: ArquiBlock</h1>
+            <p class="text-xl text-gray-600 mt-2">Sistemas y Organizaciones</p>
+            <div class="mt-6 text-gray-500">
+                <p><span class="font-semibold">Integrantes:</span> Miyen Brandolino, Luka Posternak, Agustín Sepulveda, Tomás Martínez Bengolea</p>
+                <p><span class="font-semibold">Profesores:</span> Rodrigo René Cura – Leonardo Morales</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- STICKY NAVIGATION -->
+    <nav class="sticky top-0 bg-white/80 backdrop-blur-sm z-10 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-center items-center space-x-8 py-3">
+                <a href="#introduccion" class="nav-link text-gray-600 hover:text-blue-500 transition-colors pb-1">Introducción</a>
+                <a href="#diagnostico" class="nav-link text-gray-600 hover:text-blue-500 transition-colors pb-1">Diagnóstico</a>
+                <a href="#propuesta" class="nav-link text-gray-600 hover:text-blue-500 transition-colors pb-1">Propuesta SIGOP</a>
+                <a href="#conclusion" class="nav-link text-gray-600 hover:text-blue-500 transition-colors pb-1">Conclusión</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8">
+        
+        <!-- SECTION 1: INTRODUCCIÓN -->
+        <section id="introduccion" class="section-card">
+            <h2 class="text-3xl font-bold mb-6 border-b pb-2">1. Introducción</h2>
+            <div class="space-y-4 text-lg">
+                <h3 class="text-xl font-semibold text-gray-700">Presentación de la Organización</h3>
+                <p>ArquiBlock es una empresa en crecimiento dedicada a la fabricación de bloques de hormigón celular y a la construcción de módulos habitacionales bajo la modalidad "llave en mano". Su propuesta de valor se centra en ofrecer una alternativa de construcción rápida, eficiente y de alta calidad, posicionándose como una solución superior a las casas prefabricadas livianas tradicionales gracias a la solidez y excelentes propiedades de aislación de su sistema constructivo.</p>
+                <h3 class="text-xl font-semibold text-gray-700">Metodología de Trabajo</h3>
+                <p>Para llevar a cabo el análisis, se utilizó una metodología de relevamiento cualitativa, combinando técnicas de entrevista semiestructurada para comprender la visión del negocio, y observación directa asistida para identificar los flujos de trabajo y cuellos de botella operativos. Posteriormente, se aplicaron herramientas como el Análisis Sistémico y FODA para estructurar un diagnóstico completo.</p>
+            </div>
+        </section>
+
+        <!-- SECTION 2: DIAGNÓSTICO -->
+        <section id="diagnostico" class="section-card">
+            <h2 class="text-3xl font-bold mb-6 border-b pb-2">2. Diagnóstico Organizacional</h2>
+            <div class="space-y-6">
+                <h3 class="text-xl font-semibold text-gray-700">Problemáticas Detectadas</h3>
+                <ul class="list-disc list-inside space-y-2 bg-red-50 p-4 rounded-md border border-red-200">
+                    <li><b>Falta de Visibilidad de Costos y Rentabilidad:</b> Incapacidad para determinar la ganancia exacta por proyecto.</li>
+                    <li><b>Descoordinación entre Producción y Obra:</b> Desconexión que genera cuellos de botella y demoras en las entregas.</li>
+                    <li><b>Gestión Manual y Fragmentada:</b> Procesos clave gestionados con herramientas informales (WhatsApp, pizarras, Excel).</li>
+                    <li><b>Dependencia Crítica del Dueño:</b> Las operaciones fundamentales recaen sobre una sola persona, limitando la escalabilidad.</li>
+                </ul>
+                <h3 class="text-xl font-semibold text-gray-700">Análisis Sistémico (TGS)</h3>
+                <p>El sistema actual de ArquiBlock carece de un bucle de <b>retroalimentación (feedback)</b> formal y efectivo. Al no poder medir con precisión la rentabilidad de sus salidas (proyectos terminados), no tienen la información necesaria para ajustar y optimizar sus entradas y procesos (ej. corregir precios, mejorar planificación). Esta ausencia de feedback es la justificación sistémica para la necesidad de un Sistema de Información.</p>
+                <h3 class="text-xl font-semibold text-gray-700">Análisis FODA</h3>
+                <p class="mb-4">La matriz FODA resume la situación estratégica, conectando las debilidades internas con las oportunidades del entorno.</p>
+                <div class="overflow-x-auto">
+                  <table border="1" cellpadding="10" cellspacing="0" style="border-collapse: collapse; width: 100%; font-family: Arial; font-size: 14px;">
+                    <thead style="background-color: #f2f2f2;">
+                      <tr>
+                        <th></th>
+                        <th><strong>FORTALEZAS (F)</strong></th>
+                        <th><strong>DEBILIDADES (D)</strong></th>
+                      </tr>
+                    </thead>
+
+                      <tr>
+                        <th style="background-color: #e0f7fa;"><strong>OPORTUNIDADES (O)</strong></th>
+                        <td>
+                          <strong>Estrategias FO (Ofensivas - Maxi-Maxi)</strong><br>
+                          1. Lanzar una campaña de marketing digital (O3, O4) enfocada en la calidad y ahorro energético del producto (F1), mostrando obras terminadas (F4) para captar al nicho de mercado insatisfecho con las prefabricadas (O2).<br>
+                          2. Desarrollar un modelo de negocio para franquicias o socios constructores, apalancándose en el proceso de obra estandarizado (F2) y el conocimiento técnico (F3) para crecer sin depender exclusivamente de la propia capacidad (O1).
+                        </td>
+                        <td>
+                          <strong>Estrategias DO (Reorientación - Mini-Maxi)</strong><br>
+                          1. Implementar un sistema de gestión de proyectos de bajo costo (O3) para integrar la información, solucionar la falta de control de costos (D1) y la trazabilidad del inventario (D4).<br>
+                          2. Utilizar el nuevo sistema para crear un "presupuestador online" que, aprovechando la demanda del mercado (O2), permita a los clientes configurar su módulo y obtener un presupuesto preliminar, automatizando parte del trabajo del dueño (D5).
+                        </td>
+                      </tr>
+                      <tr>
+                        <th style="background-color: #ffecb3;"><strong>AMENAZAS (A)</strong></th>
+                        <td>
+                          <strong>Estrategias FA (Defensivas - Maxi-Mini)</strong><br>
+                          1. Usar el argumento de venta comprobable (F4) y la calidad superior del producto (F1) para crear un "manual de comparación" que neutralice a la competencia de bajo precio (A1).<br>
+                          2. Diversificar la oferta hacia módulos más pequeños o ampliaciones (oficinas de jardín, quinchos), utilizando el proceso de obra eficiente (F2), para captar clientes en contextos económicos recesivos (A3).
+                        </td>
+                        <td>
+                          <strong>Estrategias DA (Supervivencia - Mini-Mini)</strong><br>
+                          1. Estandarizar 2 o 3 modelos de módulos habitacionales para optimizar la producción limitada (D2) y reducir exposición a la volatilidad de precios de insumos (A2).<br>
+                          2. Establecer un protocolo de producción que contemple pronósticos climáticos (A4) y vincule cada lote a un cliente, evitando errores de entrega (D4) y manejando expectativas (D5).
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: PROPUESTA SIGOP -->
+        <section id="propuesta" class="section-card">
+            <h2 class="text-3xl font-bold mb-6 border-b pb-2">3. Propuesta del Sistema "SIGOP"</h2>
+            <p class="text-lg mb-6">Para dar respuesta a las problemáticas detectadas, se propone el **Sistema de Información Integrado para Gestión de Obras y Producción (SIGOP)**, un sistema web centralizado que cruza datos de producción, logística, avances y costos.</p>
+            
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-4">Historias de Usuario y Soluciones de Interfaz</h3>
+                    <p class="mb-4">El sistema se diseñó en base a las necesidades de sus usuarios. A continuación, se muestra cómo cada interfaz propuesta resuelve una historia de usuario clave.</p>
+                    
+                    <!-- Historia de Usuario 1 -->
+                    <div class="diagram-container bg-gray-50">
+                        <p class="font-semibold"><b>Historia 1:</b> "Como jefe de obra, quiero registrar desde el celular el avance de cada etapa, para que el equipo tenga visibilidad en tiempo real."</p>
+                        <p class="mt-4"><b>Solución de Interfaz:</b></p>
+                        <img src="assets/interfaces/Interfaz-Avance-de-Obra.png" alt="Interfaz de Carga de Avances en Obra" class="mt-2 rounded-lg shadow-md w-full">
+                    </div>
+
+                    <!-- Historia de Usuario 2 -->
+                    <div class="diagram-container bg-gray-50">
+                        <p class="font-semibold"><b>Historia 2:</b> "Como administrador general, quiero ver en un panel todos los indicadores clave del proyecto, para tomar decisiones informadas."</p>
+                        <p class="mt-4"><b>Solución de Interfaz:</b></p>
+                         <img src="assets/interfaces/Interfaz-Panel-de-Control.png" alt="Interfaz del Panel de Control" class="mt-2 rounded-lg shadow-md w-full">
+                         <img src="assets/interfaces/Interfaz-Presupustos-y-Costos.png" alt="Interfaz de Presupuestos y Costos" class="mt-4 rounded-lg shadow-md w-full">
+                    </div>
+
+                    <!-- Historia de Usuario 3 -->
+                    <div class="diagram-container bg-gray-50">
+                        <p class="font-semibold"><b>Historia 3:</b> "Como responsable de producción, quiero ver qué cantidad de bloques necesita cada obra para la próxima semana, para organizar la fabricación sin urgencias."</p>
+                         <p class="mt-4"><b>Solución de Interfaz:</b></p>
+                         <img src="assets/interfaces/Interfaz-Produccion-Obra.png" alt="Interfaz de Sincronización Producción-Obra" class="mt-2 rounded-lg shadow-md w-full">
+                         <img src="assets/interfaces/Interfaz-Logistica.png" alt="Interfaz de Logística" class="mt-4 rounded-lg shadow-md w-full">
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-4">Modelado del Sistema (Diagramas)</h3>
+                    <p class="mb-4">Para detallar el funcionamiento, se modelaron los procesos clave del sistema.</p>
+                    
+                    <div class="diagram-container">
+                        <h4 class="font-semibold">Diagrama de Casos de Uso: Gestión de Avances</h4>
+                        <img src="assets/diagramas/DCU-Avance_Obra.png" alt="Diagrama de Caso de Uso 1" class="mt-2 rounded-lg shadow-md w-full">
+                    </div>
+                     <div class="diagram-container">
+                        <h4 class="font-semibold">Diagrama de Secuencia: Registro de Avance</h4>
+                        <img src="assets/diagramas/DS-Avance_Obra.png" alt="Diagrama de Secuencia 1" class="mt-2 rounded-lg shadow-md w-full">
+                    </div>
+                     <p class="text-center text-gray-500 italic my-6">* Se incluirían los demás diagramas de manera similar... *</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: CONCLUSIÓN -->
+        <section id="conclusion" class="section-card">
+            <h2 class="text-3xl font-bold mb-6 border-b pb-2">4. Conclusión</h2>
+            <div class="space-y-4 text-lg">
+                <p>El análisis realizado a ArquiBlock revela una empresa con un producto de alta calidad y un gran potencial, pero cuyo crecimiento se ve obstaculizado por una gestión operativa y financiera basada en métodos manuales. La falta de un sistema integrado genera una cadena de problemas que culmina en la imposibilidad de medir la rentabilidad.</p>
+                <p class="font-semibold text-gray-900">La propuesta del sistema SIGOP está diseñada para ser la columna vertebral digital de la empresa. Ataca directamente cada una de las debilidades detectadas:</p>
+                <ul class="list-disc list-inside space-y-2 pl-4">
+                    <li>La <b>incertidumbre financiera</b> se convierte en <b>control de rentabilidad en tiempo real</b>.</li>
+                    <li>La <b>descoordinación y el caos</b> se transforman en <b>planificación proactiva y sincronizada</b>.</li>
+                    <li>La <b>información fragmentada</b> se consolida en una <b>única fuente de la verdad</b>.</li>
+                </ul>
+                <p>La implementación de este sistema no solo representaría una mejora operativa, sino que le proporcionaría a ArquiBlock la herramienta estratégica fundamental que necesita para gestionar su crecimiento de manera sostenible, optimizar sus recursos y, finalmente, consolidar su posición como una marca de referencia en el mercado de la construcción modular.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // Script para la navegación activa (scrollspy)
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 120) { // 120 es el offset para el header y nav
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
