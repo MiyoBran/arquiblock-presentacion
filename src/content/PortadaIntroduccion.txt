@@ -1,3 +1,23 @@
 # Portada e Introducción
 
-(Presentación de ArquiBlock, objetivo del trabajo)
+Trabajo Integrador: ArquiBlock
+Sistemas y Organizaciones  
+
+Integrantes:  
+Miyen Brandolino  
+Luka Posternak  
+Agustín Sepulveda  
+Tomás Martínez Bengolea
+
+Profesores: Rodrigo René Cura – Leonardo Morales  
+Fecha de entrega: 19 de junio de 2025  
+1- Introducción:
+Presentación de la Organización:
+ArquiBlock es una empresa en crecimiento dedicada a la fabricación de bloques de hormigón celular y a la construcción de módulos habitacionales bajo la modalidad "llave en mano". Su propuesta de valor se centra en ofrecer una alternativa de construcción rápida, eficiente y de alta calidad, posicionándose como una solución superior a las casas prefabricadas livianas tradicionales gracias a la solidez y excelentes propiedades de aislación de su sistema constructivo.
+Objetivo:
+El objetivo principal fue aplicar los conocimientos teóricos de la materia en un caso real, realizando un análisis exhaustivo de una organización para identificar sus problemáticas operativas y estratégicas, y proponer el diseño de un Sistema de Información (SI) que brinde una solución integral a dichos problemas.
+Metodología de Trabajo:
+Para llevar a cabo el análisis, se utilizó una metodología de relevamiento cualitativa, combinando dos técnicas principales:
+Entrevista Semiestructurada: Se realizó una entrevista en profundidad con el responsable de la empresa para comprender la visión del negocio, los procesos, los desafíos y los objetivos estratégicos.
+Observación Directa: Se utilizó un modelo de lenguaje (LLM) como apoyo en el proceso de observación directa. Mediante sus preguntas y orientaciones, se fue guiando la identificación de los aspectos clave del flujo de trabajo, desde el contacto comercial hasta la entrega de la obra. Las respuestas proporcionadas por el observador alimentaron el análisis, y el informe resultante fue elaborado por el propio LLM en base a dicha interacción.
+

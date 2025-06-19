@@ -1,3 +1,70 @@
 # Diagnóstico Organizacional
 
 (Metodología, problemáticas, análisis sistémico, FODA)
+
+ Diagnóstico organizacional:
+Problemáticas Detectadas:
+El relevamiento ayudó a descubrir una serie de problemáticas críticas que actualmente limitan el potencial de crecimiento y la rentabilidad de ArquiBlock:
+Falta de Visibilidad de Costos y Rentabilidad: El hallazgo más crítico es la incapacidad de la empresa para determinar el costo y la ganancia exacta por proyecto. La información financiera está dispersa, impidiendo la toma de decisiones estratégicas basadas en datos.
+Descoordinación entre Producción y Obra: Existe una desconexión total entre los compromisos de venta y la planificación de la fábrica. Esto genera un cuello de botella en la producción, demoras en las entregas y un uso ineficiente de los recursos.
+Gestión Manual y Fragmentada: Los procesos clave (ventas, planificación, inventario, logística) se gestionan con herramientas informales y descentralizadas (WhatsApp, pizarras, planillas Excel no integradas), lo que aumenta el riesgo de errores y la pérdida de información.
+Dependencia Crítica del Dueño: Las operaciones fundamentales recaen sobre una sola persona, lo cual representa un punto único de fallo y limita la capacidad de la empresa para escalar sus operaciones.
+Análisis Sistémico (TGS):
+Aplicando la Teoría General de Sistemas, podemos describir a ArquiBlock de la siguiente manera:
+Entorno: Competidores (casas prefabricadas), mercado de la construcción, proveedores de insumos, coyuntura económica y regulaciones.
+Entradas: Pedidos de nuevos clientes, listas de precios de proveedores, condiciones climáticas que afectan la producción.
+Procesos: Presupuestación, planificación de la producción, construcción de módulos, logística de entrega, gestión administrativa.
+Salidas: Módulos habitacionales entregados, facturas, remitos, pagos a proveedores.
+Retroalimentación (Feedback): El sistema actual de ArquiBlock carece de un bucle de retroalimentación formal y efectivo. Al no poder medir con precisión la rentabilidad de sus salidas (los proyectos terminados), no tienen la información necesaria para ajustar y optimizar sus entradas y procesos (por ejemplo, corregir sus precios de venta o mejorar la planificación). Esta ausencia de feedback es la justificación sistémica fundamental para la necesidad de un Sistema de Información.
+Análisis FODA:
+La siguiente matriz FODA resume la situación estratégica de la empresa, sintetizando el diagnóstico y conectando las debilidades internas con las oportunidades del entorno.
+F														D
+Producto Diferenciado y de Alta Calidad
+Proceso de Obra Estandarizado y Eficiente
+Conocimiento Técnico y Visión de Crecimiento Clara
+Argumento de Venta Sólido y Comprobable
+Incapacidad para Medir Costos y Rentabilidad por Proyecto
+Capacidad de Producción Limitada (Cuello de Botella Estratégico)
+Sistemas de Gestión Inexistentes o Informales
+Nula Trazabilidad del Inventario
+ Alta Dependencia del Dueño
+Mercado en Crecimiento para la Construcción Rápida y Eficiente
+Demanda de Viviendas de Mayor Calidad que la Prefabricada Estándar
+Acceso a Herramientas Digitales de Gestión (SaaS)
+Tendencia hacia la Construcción Sostenible
+Fuerte Competencia Basada en Precios Bajos
+Volatilidad en el Costo de los Insumos
+Coyuntura Económica y Acceso al Crédito
+Factores Climáticos
+
+O														A
+Explicación del FODA:
+Fortalezas (F)
+Son las capacidades y recursos internos que le dan a ArquiBlock una ventaja competitiva.
+F1: Producto Diferenciado y de Alta Calidad: Cuentan con un sistema constructivo propio (bloques de hormigón celular macizos) que es objetivamente superior en durabilidad, aislación y solidez a las alternativas de bajo costo como las prefabricadas livianas (verificado en la entrevista).
+F2: Proceso de Obra Estandarizado y Eficiente: La ejecución en obra, especialmente cuando se realiza con su propio equipo, es un punto fuerte y predecible, controlado mediante un sistema de pagos por avance (detectado en la observación).
+F3: Conocimiento Técnico y Visión de Crecimiento Clara: El dueño posee el "know-how" y tiene un plan definido para escalar la producción, identificando que el obstáculo es 
+
+económico, no técnico (mencionado en la entrevista).
+F4: Argumento de Venta Sólido y Comprobable: Utilizan con éxito la demostración física de obras y productos para combatir prejuicios y generar confianza en los clientes.
+Debilidades (D)
+Son los aspectos internos que limitan su capacidad actual y potencial.
+D1: Incapacidad para Medir Costos y Rentabilidad por Proyecto: No existe un sistema para consolidar la información financiera, lo que les impide saber si un proyecto específico generó ganancias o pérdidas (confirmado críticamente en la observación).
+D2: Capacidad de Producción Limitada (Cuello de Botella Estratégico): La producción en fábrica es el principal factor que frena el crecimiento y la capacidad de tomar más proyectos simultáneamente (mencionado como el principal cuello de botella en la entrevista).
+D3: Sistemas de Gestión Inexistentes o Informales: Todos los procesos clave (ventas, planificación de producción, inventario, logística, seguimiento) dependen de métodos manuales, informales y descentralizados (WhatsApp, pizarras, Excel no integrados), lo que genera errores e ineficiencia.
+D4: Nula Trazabilidad del Inventario: No hay conexión formal entre el stock producido y los compromisos de venta, lo que ha provocado errores en las entregas y demoras (detectado en la observación).
+D5: Alta Dependencia del Dueño: El dueño es el centro de las operaciones críticas (ventas, planificación, resolución de problemas), lo cual no es escalable y crea un punto único de fallo.
+Factores Externos (Ambiente Externo)
+Oportunidades (O)
+Son las tendencias o factores del entorno que ArquiBlock podría aprovechar.
+O1: Mercado en Crecimiento para la Construcción Rápida y Eficiente: Existe una demanda creciente por alternativas a la construcción tradicional que ofrezcan velocidad y control de costos.
+O2: Demanda de Viviendas de Mayor Calidad que la Prefabricada Estándar: Hay un nicho de clientes que busca la rapidez de un sistema modular pero no está dispuesto a sacrificar calidad y durabilidad, donde ArquiBlock encaja perfectamente.
+O3: Acceso a Herramientas Digitales de Gestión (SaaS): La oferta de software de gestión de proyectos, CRM y ERP para pymes es cada vez más accesible y económica, lo que permite digitalizar operaciones sin grandes inversiones iniciales.
+
+O4: Tendencia hacia la Construcción Sostenible: La excelente aislación térmica de sus bloques puede posicionarse como una ventaja clave para clientes preocupados por el ahorro energético y la sostenibilidad.
+Amenazas (A)
+Son los factores del entorno que podrían perjudicar al negocio.
+A1: Fuerte Competencia Basada en Precios Bajos: Las casas prefabricadas de menor calidad, aunque inferiores, compiten agresivamente en precio, lo cual puede ser un factor decisivo para una parte del mercado.
+A2: Volatilidad en el Costo de los Insumos: Las fluctuaciones en los precios del cemento y otros materiales impactan directamente en la rentabilidad, especialmente al no tener un sistema de costeo preciso.
+A3: Coyuntura Económica y Acceso al Crédito: Una crisis económica puede disminuir la demanda de construcción y dificultar tanto la capacidad de pago de los clientes como el acceso de la propia empresa al financiamiento necesario para expandir la fábrica.
+A4: Factores Climáticos: El clima (lluvias, heladas) fue mencionado como un factor que actualmente impacta y demora la producción, dada la falta de infraestructura adecuada.

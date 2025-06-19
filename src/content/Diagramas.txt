@@ -1,3 +1,26 @@
 # Diagramas
 
 (Nombre de archivo de imagen, descripción, y código PlantUML si aplica)
+Diagramas de Casos de Uso: "A continuación se presentan los diagramas que describen las principales interacciones que los actores pueden tener con el sistema SIGOP."
+[Insertar Imagen: Diagrama de Caso de Uso 1 - Gestión de Avances de Obra]
+DCU-Avance_Obra.png
+Contiene El caso de uso en el que el administrador valida el avance de obra, que el jefe de Obra cargo al sistema  - para esto Carga consumo materilaes, horas trabajadas y adjunta foto
+[Insertar Imagen: Diagrama de Caso de Uso 2 - Control de Rentabilidad]
+DCU-Control_Rentabilidad.png
+Un responsable administrativo registra en el sitema costos y presupuestos , El administrador puede generar reportes de rentabilidad, o visualizar comparativas presupuesto vs real 
+[Insertar Imagen: Diagrama de Caso de Uso 3 - Planificación de la Producción]
+DCU-Planificacion_Produccion.png
+Un jefe de obra puede ver las obras activas . Un Administrador puede ademas, generar requerimientos semanales , planificar produccion semanal, actualizar stock, alertar desfasajes produccion demanda
+
+
+Diagramas de Secuencia: "Los siguientes diagramas detallan la comunicación interna entre los componentes del sistema para ejecutar los casos de uso más importantes." Se describe parcialmente la interaccion del usuario con el frontend, pero tambien hay interacciones del frontend con el backend y de este con la base de datos
+[Insertar Imagen: Diagrama de Secuencia 1 - Registro de Avance de Obra]
+DS-Avance_Obra.png
+Muestra los pasos Que sigue el Jefe de Obra para registrar los avance, desde el paso 1 que es iniciar sesion, el 8 completar los datos (etapa,%,foto,materiales)  hasta el 14 : muestra mensaje "Avance guardado con Exito"
+[Insertar Imagen: Diagrama de Secuencia 2 - Creación de Presupuesto y Análisis de Rentabilidad]
+DS-Control_Rentabilidad.png
+Describe al Administrador que en 1: inicia Sesion , en 8 completaPresupuesto, en 13 el frontend le muestraMensaje("Proyecto Guardado") , luego de meses donde la obra se ejecuta y se cargan los costos reales. Puede acceder a analisis de rentabilidad
+
+[Insertar Imagen: Diagrama de Secuencia 3 - Planificación de la Producción Semanal]
+DS-Planificacion_Produccion.png
+Describe al dueño o encargado de produccion que puede en 10 visualizar panel con alertas de deficit, en 11 crearPlanProduccionSemanal() y en 18 se le muestraMensaje("Plan de Produccion Guardado")

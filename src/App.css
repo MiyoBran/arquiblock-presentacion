@@ -89,3 +89,67 @@
   margin-left: 1.5rem;
   list-style: disc;
 }
+
+.pdf-download-btn, .pdf-link {
+  display: inline-block;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.9rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+  transition: background 0.2s, color 0.2s;
+}
+.pdf-download-btn:hover, .pdf-link:hover {
+  background: #1e40af;
+  color: #fff;
+}
+
+.diagramas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.diagramas-grid div {
+  flex: 1 1 250px;
+  max-width: 320px;
+  background: #f8fafc;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 1rem;
+  text-align: center;
+}
+.diagramas-grid img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+.interface-img {
+  display: block;
+  max-width: 400px;
+  width: 100%;
+  margin: 1.5rem auto 1rem auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+}
+.historias-usuario > div {
+  background: #f8fafc;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.historias-usuario h3 {
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+}
+
+.no-bullet {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}

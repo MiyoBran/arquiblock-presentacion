@@ -1,3 +1,26 @@
 # Propuesta del Sistema de Información SIGOP
 
 (Nombre, objetivo, actores, componentes, decisiones técnicas)
+3- Propuesta del Sistema de Información "SIGOP":
+Para dar respuesta a las problemáticas detectadas, se propone el diseño y desarrollo de un Sistema de Información a medida.
+Objetivo y Concepto del Sistema
+Se propone el Sistema de Información Integrado para Gestión de Obras y Producción (SIGOP).
+Concepto General: Un sistema web centralizado que permite a los responsables de fábrica, jefes de obra y administración visualizar y actualizar información en tiempo real sobre cada proyecto, cruzando datos de producción, logística, avances físicos, consumo y costos.
+Módulos Principales
+El sistema SIGOP se compone de cinco módulos integrados:
+Módulo de Sincronización Producción–Obra: Coordina la producción con la demanda específica de cada obra, generando requerimientos y alertas por desfases.
+Módulo de Logística de Entregas: Organiza y rastrea el envío eficiente de materiales, ya sea con flota propia o tercerizada.
+Panel de Control por Proyecto (Dashboard): Brinda una vista 360° en tiempo real del estado completo de cada obra (avance, costos, desvíos, etc.).
+Módulo de Presupuesto y Seguimiento de Costos: Conecta el presupuesto inicial con la ejecución real para calcular la rentabilidad final de cada proyecto.
+Módulo de Carga de Avances en Obra: Permite al jefe de obra informar avances, consumo de materiales y horas trabajadas directamente desde el sitio de construcción.
+Actores del Sistema
+Administrador General: Tiene acceso completo a todos los módulos para supervisión y toma de decisiones estratégicas.
+Responsable de Producción: Administra el plan de producción y el stock.
+Jefe de Obra / Capataz: Carga los avances y el consumo de recursos desde la obra.
+Cliente: (Rol potencial) Podría tener un acceso de solo lectura para ver el avance general de su proyecto, aumentando la transparencia.
+Decisiones de Diseño
+Enfoque en un Panel de Control: Se decidió que el corazón del sistema fuera un 
+
+Dashboard por proyecto, ya que el principal dolor del cliente era la falta de una visión unificada. Centralizar la información en un solo lugar ataca directamente la fragmentación detectada.
+Gestión por Roles: El sistema se diseña con permisos diferenciados para asegurar que cada usuario acceda solo a la información y funciones relevantes para su trabajo, simplificando la interfaz y protegiendo datos sensibles como la rentabilidad.
+

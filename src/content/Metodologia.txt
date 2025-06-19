@@ -1,3 +1,17 @@
 # Metodología y Plan de Implementación
 
+
 (Metodología de desarrollo, camino crítico, fases)
+Metodología de Trabajo:
+Para llevar a cabo el análisis, se utilizó una metodología de relevamiento cualitativa, combinando dos técnicas principales:
+Entrevista Semiestructurada: Se realizó una entrevista en profundidad con el responsable de la empresa para comprender la visión del negocio, los procesos, los desafíos y los objetivos estratégicos.
+Observación Directa: Se utilizó un modelo de lenguaje (LLM) como apoyo en el proceso de observación directa. Mediante sus preguntas y orientaciones, se fue guiando la identificación de los aspectos clave del flujo de trabajo, desde el contacto comercial hasta la entrega de la obra. Las respuestas proporcionadas por el observador alimentaron el análisis, y el informe resultante fue elaborado por el propio LLM en base a dicha interacción.
+Entrevista Semiestructurada: "Se diseñó un cuestionario de 10 preguntas abiertas para guiar la conversación con el responsable de ArquiBlock, permitiendo explorar en profundidad su visión y problemáticas."
+Observación Directa Asistida: "Se realizó un seguimiento del flujo de trabajo de la empresa, desde la venta hasta la post-entrega, mediante una serie de preguntas específicas que simularon la presencia de un observador en el lugar. Esto permitió validar la información de la entrevista y detectar cuellos de botella operativos no mencionados explícitamente."
+Análisis Documental: "Se utilizaron los apuntes de la cátedra como marco teórico para aplicar herramientas de análisis como la Teoría General de Sistemas y el análisis FODA."
+—-
+Luego en base al informe de la entrevista y la observacion directa se plantearon 5 diferentes Sistemas de Informacion Posibles, el grupo se decidio por la opcion mas Completa, SIGOP
+Se Dividieron tareas , → Descripcion del SI, Historias de usuario - Agustin →Foda y Diagrama de Secuencia→Miyen , Diagrama de Caso de Uso →Tomas , Interfaces →Luka
+—--
+Con el material listo se presento al grupo, Se decidio organizar equipos de dos personas, Miyen y Luka para armar Informe Final para presentar, y Agustin y Tomas la presentacion.
+—> Herramientas usadas ChatGPT / Gemini / Copilot / PlantUml / Prezi.com / app.banani.co /Gimp

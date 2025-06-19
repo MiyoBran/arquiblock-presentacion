@@ -1,45 +1,18 @@
-# Interfaces - Mobile
-herramienta usada : stitch.withgoogle.com
-The designs have been generated for your construction management system:
-These are the modules you described for the construction management system:
+# Interfaces 
+(Nombre de archivo de imagen, descripción, y código PlantUML si aplica)
+herramienta usada : app.banani.co
+Aquí deben insertar las 5 imágenes de las interfaces que hizo Luka.
+Muy Importante: Deben conectar cada interfaz con la Historia de Usuario que resuelve.
+Para la Historia 1 (Carga de Avances):
+[Insertar Imagen: Interfaz-Avance-de-Obra.png]
+Descripción: "Esta interfaz le permite al Jefe de Obra cumplir con su necesidad de registrar el avance diario directamente desde la obra."
+Para la Historia 2 (Panel de Control):
+[Insertar Imagen: Interfaz-Panel-de-Control.png]
+[Insertar Imagen: Interfaz-Presupustos-y-Costos.png]
+Descripción: "Estas dos pantallas componen la solución para el Administrador. El Panel de Control le da una vista 360°, mientras que la de Presupuesto y Costos le permite analizar en detalle la rentabilidad."
+Para la Historia 3 (Planificación):
+[Insertar Imagen: Interfaz-Produccion-Obra.png]
+[Insertar Imagen: Interfaz-Logistica.png]
+Descripción: "Estas interfaces le dan al Responsable de Producción las herramientas para planificar la fabricación (Sincronización) y coordinar las entregas (Logística), resolviendo así su necesidad de evitar urgencias y faltantes."
 
-Production-Construction Synchronization: Manages scheduling, production needs, stock, and production plans, with alerts for discrepancies.
-Delivery Logistics: Organizes and tracks material deliveries to construction sites, including vehicle assignment and delivery confirmation.
-Project Dashboard: Provides a real-time overview of each project's status, including progress, material consumption, costs, and key dates.
-Budget and Cost Tracking: Compares initial budgets against actual expenditures, tracking profitability and cost variances.
-On-site Progress Updates: Allows on-site staff to report progress, material usage, hours worked, and issues directly from the construction site.
-
-# Nombre del diagrama o interfaz
-Archivo: production-schedule.html
-Production Schedule: Calendar view of active projects with projected progress dates.
-
-# Nombre del diagrama o interfaz
-Archivo: delivery-schedule.html
-Delivery Schedule: Schedule of deliveries per project and date, including vehicle assignments.
-
-# Nombre del diagrama o interfaz
-Archivo: project-dashboard.html
-Project Dashboard: Real-time overview of project status including progress, material consumption, costs, and key dates.
-
-# Nombre del diagrama o interfaz
-Archivo: budget-tracking.html
-Budget Tracking: Comparison of initial budget versus actual expenditures, tracking profitability and cost variances.
-
-
-# Nombre del diagrama o interfaz
-Archivo: progress-updates.html
-Progress Updates: Interface for on-site staff to report progress, material usage, hours, and issues.
-
-
----------- Explicacion de la interfaz dada por la herramienta:
-Certainly, here are more detailed descriptions for each screen of the construction management system app, elaborating on their intended functionality and design considerations:
-
-Production Schedule: This screen displays a calendar interface showcasing active construction projects. Each project is marked with key milestones and projected progress dates, allowing for a visual representation of project timelines. The design prioritizes a clean and color-coded layout to easily distinguish between different projects and their stages, aiding in quick assessment of workload distribution and potential overlaps.
-
-Delivery Schedule: This interface provides a comprehensive view of scheduled material deliveries, organized by project and delivery date. It details the items to be delivered, assigned vehicles (whether company-owned or third-party), and includes sections for confirmation upon successful delivery. The design emphasizes clear categorization and filtering options, enabling users to efficiently track and manage logistics, ensuring timely material availability on-site.
-
-Project Dashboard: Offering a real-time overview, this dashboard consolidates critical project metrics. It features progress trackers for various construction phases, real-time material consumption against budget, and associated costs. Key dates such as client payments, scheduled deliveries, and inspections are prominently displayed. The design employs visual indicators and progress bars to provide an intuitive grasp of project status, supporting informed decision-making.
-
-Budget Tracking: This screen facilitates a detailed comparison between the initial project budget and actual expenditures. It breaks down costs into categories like materials, labor, and indirect expenses, highlighting variances to monitor financial health. The interface includes visual reports and summaries to quickly identify areas of overspending or potential savings, enhancing financial oversight and control.
-
-Progress Updates: Designed for on-site staff, this interface allows for direct reporting of project advancements. It supports daily or weekly updates on phase completions, actual material usage, and recorded work hours. The inclusion of fields for photos, comments, and issue reporting ensures comprehensive feedback from the field, fostering real-time communication and problem-solving.
+----- Estas imagenes se encuentran en assets/interfaces/

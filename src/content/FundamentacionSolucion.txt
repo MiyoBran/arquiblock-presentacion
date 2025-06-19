@@ -1,3 +1,18 @@
 # Fundamentación de la Solución Propuesta
 
 (Árboles de decisión, comparativas, justificación)
+A partir del análisis FODA, se diseñaron una serie de estrategias para capitalizar las fortalezas, aprovechar oportunidades, mitigar amenazas y superar las debilidades. La estrategia clave que fundamenta nuestra propuesta es la Estrategia DO (Reorientación): Implementar un sistema de gestión para integrar la información, solucionar la falta de control de costos y la nula trazabilidad del inventario, aprovechando el acceso a herramientas digitales de bajo costo.
+Estrategias:
+
+
+FORTALEZAS (F)
+DEBILIDADES (D)
+OPORTUNIDADES (O)
+Estrategias FO (Ofensivas - Maxi-Maxi) 1). Lanzar una campaña de marketing digital (O3, O4) enfocada en la calidad y ahorro energético del producto (F1), mostrando obras terminadas (F4) para captar al nicho de mercado insatisfecho con las prefabricadas (O2).B). Desarrollar un modelo de negocio para franquicias o socios constructores, apalancándose en el proceso de obra estandarizado (F2) y el conocimiento técnico (F3) para crecer sin depender exclusivamente de la propia capacidad (O1).
+Estrategias DO (Reorientación - Mini-Maxi)1). Implementar un sistema de gestión de proyectos de bajo costo (O3) para integrar la información, solucionar la falta de control de costos (D1) y la trazabilidad del inventario (D4).2. Utilizar el nuevo sistema para crear un "presupuestador online" o una herramienta de simulación que, aprovechando la demanda del mercado (O2), permita a los clientes configurar su módulo y obtener un presupuesto preliminar, automatizando parte del trabajo del dueño (D5).
+AMENAZAS (A)
+Estrategias FA (Defensivas - Maxi-Mini)1. Usar el argumento de venta comprobable (F4) y la calidad superior del producto (F1) para crear un "manual de comparación" que neutralice a la competencia de bajo precio (A1), educando al cliente sobre la durabilidad y el costo de mantenimiento a largo plazo.2. Diversificar la oferta hacia módulos más pequeños o ampliaciones (ej: oficinas de jardín, quinchos), utilizando el proceso de obra eficiente (F2), para captar clientes en contextos económicos recesivos (A3).
+Estrategias DA (Supervivencia - Mini-Mini)1. Estandarizar 2 o 3 modelos de módulos habitacionales para optimizar y hacer más predecible la producción limitada (D2), reduciendo la exposición a la volatilidad de precios de insumos (A2) al comprar materiales en mayor volumen para esos modelos específicos.2. Establecer un protocolo de producción que contemple pronósticos climáticos (A4) y vincule formalmente cada lote producido a un cliente, para evitar los errores de entrega (D4) y manejar las expectativas del cliente de forma transparente.
+
+
+

@@ -1,3 +1,10 @@
 # Conclusión
 
 (Impacto esperado, reflexiones finales)
+Conclusión:
+El análisis realizado a ArquiBlock revela una empresa con un producto de alta calidad y un gran potencial, pero cuyo crecimiento se ve obstaculizado por una gestión operativa y financiera basada en métodos manuales e informales. La falta de un sistema integrado genera una cadena de problemas que culmina en la imposibilidad de medir la rentabilidad, el indicador más vital para cualquier negocio.
+La propuesta del sistema SIGOP está diseñada para ser la columna vertebral digital de la empresa. Ataca directamente cada una de las debilidades detectadas, transformándolas en fortalezas:
+La incertidumbre financiera se convierte en control de rentabilidad en tiempo real.
+La descoordinación y el caos se transforman en planificación proactiva y sincronizada.
+La información fragmentada se consolida en una única fuente de la verdad.
+La implementación de este sistema no solo representaría una mejora operativa, sino que le proporciona a ArquiBlock la herramienta estratégica fundamental que necesita para gestionar su crecimiento de manera sostenible, optimizar sus recursos y, finalmente, consolidar su posición como una marca de referencia en el mercado de la construcción modular.
