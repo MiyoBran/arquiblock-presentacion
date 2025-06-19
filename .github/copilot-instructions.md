@@ -1,21 +1,59 @@
 <!-- Use this file to provide workspace-specific custom instructions to Copilot. For more details, visit https://code.visualstudio.com/docs/copilot/copilot-customization#_use-a-githubcopilotinstructionsmd-file -->
 
-This project is a Vite + React + TypeScript web presentation for the ArquiBlock final report. The site should have clear sections/pages for: Portada e Introducción, Diagnóstico Organizacional (con FODA y análisis sistémico), Fundamentación de la Solución Propuesta (con árboles de decisión y justificación), Propuesta del Sistema de Información SIGOP (con diagramas, casos de uso, bocetos de interfaz, historias de usuario), y Conclusión. Use modern, visually attractive, and easy-to-navigate UI components.
+# Roadmap de Mejoras Visuales y UX – ArquiBlock Presentación
 
-# CONTEXTO DE TRABAJO Y FLUJO
-- El contenido real de cada sección se debe cargar desde archivos `.txt` ubicados en `src/content/` (uno por sección: PortadaIntroduccion.txt, Diagnostico.txt, FundamentacionSolucion.txt, SIGOP.txt, Diagramas.txt, Interfaces.txt, HistoriasUsuario.txt, Conclusion.txt, Metodologia.txt).
-- Las imágenes de diagramas deben ir en `src/assets/diagramas/` y las de interfaces en `src/assets/interfaces/`.
-- El flujo de trabajo es: primero completar los archivos `.txt` con el contenido real, luego poblar las páginas web usando ese contenido.
-- Si los archivos `.txt` están incompletos, priorizar la carga y edición de esos archivos antes de continuar con la generación de componentes o páginas.
-- Cuando los archivos estén completos, usar su contenido para poblar las secciones web de forma estructurada y profesional.
+Este archivo define los hitos y tareas pendientes para la mejora visual y funcional de la web de presentación del informe ArquiBlock (Vite + React + TypeScript). Sirve como guía para Copilot y cualquier colaborador humano.
 
-# DEPLOY EN GITHUB PAGES
-- Cuando el contenido y la estructura estén listos, agregar a `package.json` los scripts:
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-- Instalar el paquete gh-pages como devDependency.
-- Ejecutar `npm run deploy` para publicar la web en GitHub Pages.
-- Verificar que la rama `gh-pages` esté seleccionada como fuente en la configuración de Pages del repositorio.
+---
 
-# NOTA
-Si retomas este proyecto, revisa primero los archivos de `src/content/` y espera a que estén completos antes de avanzar con la generación de la web final. Cuando todo esté listo, sigue las instrucciones de deploy para publicar la web.
+## Hitos y Tareas Pendientes
+
+### Hito 1: Sistema de Colores y Tipografía
+- [x] Implementar variables CSS para colores principales (primario, secundario, acento, fondo).
+- [x] Importar y aplicar tipografías Google Fonts (Roboto para texto, Inter o fuente distintiva para títulos).
+- [x] Establecer jerarquía clara de tamaños y pesos para títulos y texto.
+
+### Hito 2: Navegación Mejorada
+- [x] Añadir indicador visual claro de la sección activa (color, línea de acento, subrayado).
+- [x] Mejorar contraste, tamaño y feedback de los botones de navegación.
+- [x] Asegurar accesibilidad (foco visible, ARIA, soporte teclado).
+
+### Hito 3: Estructura Visual Global
+- [x] Agregar header fijo con el título principal del proyecto.
+- [x] Incluir footer con información de autoría, fecha y enlaces rápidos.
+- [x] Implementar indicador de progreso entre la navegación y el contenido (barra o breadcrumb).
+- [x] Aplicar tema semi-oscuro coherente a todo el sitio para unificar la experiencia visual.
+
+### Hito 4: Tarjetas y Contenedores
+- [ ] Aplicar efectos sutiles de sombra y bordes redondeados a todas las tarjetas y contenedores.
+- [ ] Usar bordes y espaciado consistente para separar secciones lógicas.
+
+### Hito 5: Diagramas e Imágenes
+- [x] Implementar lightbox para imágenes (react-modal).
+- [ ] Aplicar bordes redondeados y sombras a todas las imágenes.
+- [ ] Mejorar disposición en cuadrícula de los diagramas con CSS Grid.
+- [ ] Añadir efectos sutiles de hover y transición.
+
+### Hito 6: Animaciones y Micro-interacciones
+- [x] Añadir animación de fadeIn para el cambio entre secciones (Framer Motion).
+- [ ] Implementar transiciones suaves en botones, tarjetas e imágenes.
+
+### Hito 7: Botón de Descarga Destacado
+- [ ] Rediseñar el botón de descarga PDF para mayor peso visual.
+- [ ] Aplicar efectos de hover y active para mejor feedback.
+- [ ] Añadir icono representativo.
+
+### Hito 8: Adaptación Responsiva y Refinamiento
+- [ ] Revisar y mejorar la responsividad para dispositivos móviles (navegación, tarjetas, imágenes).
+- [ ] Añadir detalles de refinamiento: iconos, decoradores visuales, marcadores personalizados en listas.
+
+---
+
+**NOTA:**
+- Mantener el estilo profesional y académico, priorizando impacto visual y usabilidad.
+- Prioridad a los hitos 1-3 para entregas inmediatas.
+- Este roadmap debe ser actualizado tras cada avance relevante.
+
+---
+
+# Fin de instrucciones

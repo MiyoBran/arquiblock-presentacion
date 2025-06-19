@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import Modal from 'react-modal'
+import { motion, AnimatePresence } from 'framer-motion'
 import './App.css'
 
 import DCUAvanceObra from './assets/diagramas/DCU-Avance_Obra.png'
@@ -19,7 +21,7 @@ const sections = [
 	{
 		title: 'Portada e Introducción',
 		content: (
-			<>
+			<div className="portada-impacto">
 				<h2>Portada e Introducción</h2>
 				<p>
 					<strong>Trabajo Integrador: ArquiBlock</strong>
@@ -76,12 +78,7 @@ const sections = [
 						la entrega de la obra.
 					</li>
 				</ul>
-				<div
-					style={{
-						textAlign: 'center',
-						margin: '2rem 0',
-					}}
-				>
+				<div style={{ textAlign: 'center', margin: '2rem 0' }}>
 					<a
 						href={PDF_URL}
 						download
@@ -90,7 +87,7 @@ const sections = [
 						Descargar Informe Final (PDF)
 					</a>
 				</div>
-			</>
+			</div>
 		),
 	},
 	{
@@ -472,22 +469,169 @@ const sections = [
 function App() {
 	const [current, setCurrent] = useState(0)
 
+	// Lightbox state
+	const [modalIsOpen, setModalIsOpen] = useState(false)
+	const [modalImg, setModalImg] = useState<string | null>(null)
+	const [modalAlt, setModalAlt] = useState<string>('')
+
+	// Para accesibilidad
+	Modal.setAppElement('#root')
+
+	// Handler para abrir el modal con la imagen
+	const openModal = (img: string, alt: string) => {
+		setModalImg(img)
+		setModalAlt(alt)
+		setModalIsOpen(true)
+	}
+	const closeModal = () => setModalIsOpen(false)
+
+	// Renderizado de imágenes con lightbox para secciones Diagramas e Interfaces
+	const renderWithLightbox = (img: string, alt: string) => (
+		<img
+			src={img}
+			alt={alt}
+			className="interface-img"
+			onClick={() => openModal(img, alt)}
+			style={{ cursor: 'zoom-in' }}
+			role="button"
+			tabIndex={0}
+			aria-label={`Ampliar imagen: ${alt}`}
+		/>
+	)
+
 	return (
 		<div className="presentation-container">
-			<nav className="presentation-nav">
+			{/* Header fijo */}
+			<header className="presentation-header">
+				<h1>ArquiBlock - Sistema de Información para Gestión de Obras y Producción</h1>
+				<p>Trabajo Integrador - Sistemas y Organizaciones</p>
+			</header>
+
+			{/* Indicador de progreso */}
+			<div className="progress-indicator">
+				<div className="progress-bar">
+					<div 
+						className="progress-fill" 
+						style={{ width: `${((current + 1) / sections.length) * 100}%` }}
+					></div>
+				</div>
+				<span className="progress-text">
+					{current + 1} de {sections.length} - {sections[current].title}
+				</span>
+			</div>
+
+			<nav className="presentation-nav" aria-label="Navegación de secciones">
 				{sections.map((section, idx) => (
 					<button
 						key={section.title}
 						className={current === idx ? 'active' : ''}
 						onClick={() => setCurrent(idx)}
+						tabIndex={0}
+						aria-current={current === idx ? 'page' : undefined}
+						aria-label={`Ir a sección: ${section.title}`}
 					>
 						{section.title}
 					</button>
 				))}
 			</nav>
 			<main className="presentation-content">
-				{sections[current].content}
+				<AnimatePresence mode="wait">
+					<motion.div
+						key={current}
+						initial={{ opacity: 0, y: 32 }}
+						animate={{ opacity: 1, y: 0 }}
+						exit={{ opacity: 0, y: -32 }}
+						transition={{ duration: 0.45, ease: 'easeOut' }}
+					>
+						{/* Renderizado condicional para lightbox en secciones específicas */}
+						{current === 4 && (
+							// Diagramas
+							<>
+								<h2>Diagramas de Casos de Uso</h2>
+								<div className="diagramas-grid">
+									<div>
+										{renderWithLightbox(DCUPlanificacionProduccion, 'Caso de Uso: Planificación de la Producción')}
+										<p>Planificación de la Producción: El jefe de obra ve obras activas; el administrador planifica producción, actualiza stock y alerta desfasajes.</p>
+									</div>
+									<div>
+										{renderWithLightbox(DCUControlRentabilidad, 'Caso de Uso: Control de Rentabilidad')}
+										<p>Control de Rentabilidad: El responsable administrativo registra costos y presupuestos; el administrador puede generar reportes y visualizar comparativas.</p>
+									</div>
+									<div>
+										{renderWithLightbox(DCUAvanceObra, 'Caso de Uso: Avance de Obra')}
+										<p>Gestión de Avances de Obra: El administrador valida el avance que el jefe de obra cargó al sistema (materiales, horas, foto).</p>
+									</div>
+								</div>
+								<h2>Diagramas de Secuencia</h2>
+								<div className="diagramas-grid sequence">
+									<div>
+										{renderWithLightbox(DSAvanceObra, 'Secuencia: Avance de Obra')}
+										<p>Registro de Avance de Obra: Pasos desde iniciar sesión hasta guardar avance con éxito.</p>
+									</div>
+									<div>
+										{renderWithLightbox(DSControlRentabilidad, 'Secuencia: Control de Rentabilidad')}
+										<p>Creación de Presupuesto y Análisis de Rentabilidad: Desde iniciar sesión, completar presupuesto, hasta análisis de rentabilidad.</p>
+									</div>
+									<div>
+										{renderWithLightbox(DSPlanificacionProduccion, 'Secuencia: Planificación de la Producción')}
+										<p>Planificación de la Producción Semanal: Visualización de alertas, creación de plan y confirmación de guardado.</p>
+									</div>
+								</div>
+							</>
+						)}
+						{current === 5 && (
+							// Interfaces
+							<>
+								<h2>Interfaces de Usuario</h2>
+								<h3>Historia 1: Carga de Avances</h3>
+								{renderWithLightbox(InterfazAvanceObra, 'Interfaz Avance de Obra')}
+								<p>Permite al Jefe de Obra registrar el avance diario directamente desde la obra.</p>
+								<h3>Historia 2: Panel de Control</h3>
+								{renderWithLightbox(InterfazPanelControl, 'Interfaz Panel de Control')}
+								{renderWithLightbox(InterfazPresupuestosCostos, 'Interfaz Presupuestos y Costos')}
+								<p>Solución para el Administrador: Panel de Control (vista 360°) y Presupuesto/Costos (análisis de rentabilidad).</p>
+								<h3>Historia 3: Planificación y Logística</h3>
+								{renderWithLightbox(InterfazProduccionObra, 'Interfaz Producción Obra')}
+								{renderWithLightbox(InterfazLogistica, 'Interfaz Logística')}
+								<p>Herramientas para el Responsable de Producción: planificación de fabricación y coordinación de entregas.</p>
+							</>
+						)}
+						{/* Resto de secciones */}
+						{current !== 4 && current !== 5 && sections[current].content}
+					</motion.div>
+				</AnimatePresence>
 			</main>
+
+			{/* Footer */}
+			<footer className="presentation-footer">
+				<div className="footer-content">
+					<div className="footer-left">
+						<p><strong>Integrantes:</strong> Miyen Brandolino, Luka Posternak, Agustín Sepulveda, Tomás Martínez Bengolea</p>
+						<p><strong>Profesores:</strong> Rodrigo René Cura – Leonardo Morales</p>
+					</div>
+					<div className="footer-right">
+						<p><strong>Fecha:</strong> 19 de junio de 2025</p>
+						<a href={PDF_URL} download className="footer-download-link">
+							📄 Descargar PDF
+						</a>
+					</div>
+				</div>
+			</footer>
+
+			{/* Lightbox modal global */}
+			<Modal
+				isOpen={modalIsOpen}
+				onRequestClose={closeModal}
+				contentLabel="Imagen ampliada"
+				className="lightbox-modal"
+				overlayClassName="lightbox-overlay"
+				shouldCloseOnOverlayClick={true}
+			>
+				{modalImg && (
+					<img src={modalImg} alt={modalAlt} style={{ maxWidth: '90vw', maxHeight: '80vh', borderRadius: 12 }} />
+				)}
+				<button onClick={closeModal} className="lightbox-close" aria-label="Cerrar imagen ampliada">×</button>
+			</Modal>
 		</div>
 	)
 }
