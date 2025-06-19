@@ -36,7 +36,7 @@ Este archivo define los hitos y tareas pendientes para la mejora visual y funcio
 
 ### Hito 6: Animaciones y Micro-interacciones
 - [x] Añadir animación de fadeIn para el cambio entre secciones (Framer Motion).
-- [ ] Implementar transiciones suaves en botones, tarjetas e imágenes.
+- [x] Implementar transiciones suaves en botones, tarjetas e imágenes.
 
 ### Hito 7: Botón de Descarga Destacado
 - [ ] Rediseñar el botón de descarga PDF para mayor peso visual.

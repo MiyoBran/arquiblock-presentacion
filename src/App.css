@@ -51,6 +51,13 @@
   padding: 2rem;
   font-family: var(--font-body);
   color: var(--color-primary);
+  transition: all 0.3s ease;
+  transform: translateY(0);
+}
+
+.presentation-container:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  transform: translateY(-2px);
 }
 
 .presentation-nav {
@@ -68,13 +75,14 @@
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--color-primary);
   font-family: var(--font-heading);
   font-weight: 500;
   box-shadow: 0 1px 4px rgba(0,0,0,0.15);
   outline: none;
   position: relative;
+  transform: translateY(0);
 }
 
 .presentation-nav button:focus {
@@ -95,11 +103,15 @@
 .presentation-nav button:not(.active):focus-visible {
   background: #6c757d;
   color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .presentation-nav button:active {
   background: #fd7e14;
   color: #fff;
+  transform: translateY(0);
+  transition: all 0.15s ease;
 }
 
 @media (max-width: 600px) {
@@ -136,14 +148,18 @@
   margin: 1.5rem auto 1rem auto;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.2), 0 1px 4px rgba(0,0,0,0.1);
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: zoom-in;
   border: 1px solid #495057;
+  transform: scale(1);
+  filter: brightness(0.95);
 }
 
 .interface-img:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 32px rgba(0,0,0,0.3), 0 4px 16px rgba(253,126,20,0.1);
+  filter: brightness(1.05) saturate(1.1);
+  border-color: var(--color-accent);
 }
 
 /* Efectos especiales para diagramas de secuencia */
@@ -211,11 +227,15 @@
   margin-bottom: 1.8rem;
   color: var(--color-primary);
   border: 1px solid #495057;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+  opacity: 0.95;
 }
 .historias-usuario > div:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.25), 0 2px 6px rgba(0,0,0,0.15);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.3), 0 4px 12px rgba(0,0,0,0.2);
+  opacity: 1;
+  border-color: rgba(253,126,20,0.3);
 }
 
 .no-bullet {
@@ -256,12 +276,20 @@
   padding: 1.1rem 2.5rem;
   margin-top: 2.2rem;
   box-shadow: 0 4px 24px rgba(253,126,20,0.12);
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0) scale(1);
+  border: 2px solid transparent;
 }
 .portada-impacto .pdf-download-btn:hover {
   background: #fff;
   color: var(--color-accent);
-  box-shadow: 0 6px 32px rgba(253,126,20,0.18);
+  box-shadow: 0 8px 40px rgba(253,126,20,0.25);
+  transform: translateY(-3px) scale(1.02);
+  border-color: var(--color-accent);
+}
+.portada-impacto .pdf-download-btn:active {
+  transform: translateY(-1px) scale(0.98);
+  transition: all 0.15s ease;
 }
 @media (max-width: 600px) {
   .portada-impacto {
@@ -326,12 +354,15 @@
   align-items: center;
   justify-content: center;
   z-index: 1100;
-  transition: background 0.2s, color 0.2s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1) rotate(0deg);
 }
 .lightbox-close:hover {
   background: #fff;
   color: var(--color-accent);
   border: 2px solid var(--color-accent);
+  transform: scale(1.1) rotate(90deg);
+  box-shadow: 0 4px 16px rgba(253,126,20,0.3);
 }
 @media (max-width: 600px) {
   .lightbox-modal img {
@@ -487,4 +518,189 @@
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: 600;
+}
+
+/* ========= ANIMACIONES Y MICRO-INTERACCIONES ADICIONALES ========= */
+
+/* Animaciones de entrada secuencial para elementos del contenido */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efectos hover mejorados para texto interactivo */
+.presentation-content p {
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+  padding-left: 0;
+}
+
+.presentation-content p:hover {
+  border-left-color: var(--color-accent);
+  padding-left: 1rem;
+  background: rgba(253,126,20,0.05);
+  border-radius: 0 8px 8px 0;
+}
+
+/* Efectos para listas con mejor feedback visual */
+.presentation-content ul li,
+.presentation-content ol li {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 0.3rem 0;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.presentation-content ul li:hover,
+.presentation-content ol li:hover {
+  background: rgba(253,126,20,0.08);
+  transform: translateX(12px);
+  padding-left: 1rem;
+  color: var(--color-accent);
+  box-shadow: 0 2px 8px rgba(253,126,20,0.15);
+}
+
+/* Animación de pulsación sutil para botones importantes */
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 0 4px 24px rgba(253,126,20,0.12);
+  }
+  50% { 
+    box-shadow: 0 6px 32px rgba(253,126,20,0.25);
+  }
+}
+
+.pdf-download-btn:focus {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Efectos hover adicionales para títulos de sección */
+.presentation-content h4 {
+  position: relative;
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.presentation-content h4::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-accent);
+  transition: width 0.4s ease;
+}
+
+.presentation-content h4:hover::after {
+  width: 60%;
+}
+
+.presentation-content h4:hover {
+  color: var(--color-accent);
+  transform: translateX(4px);
+}
+
+/* Animación flotante para elementos destacados */
+@keyframes float-subtle {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+}
+
+.portada-impacto-float {
+  animation: float-subtle 6s ease-in-out infinite;
+}
+
+/* Efectos de entrada secuencial para elementos de grid */
+.diagramas-grid > div {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.diagramas-grid > div:nth-child(1) { animation-delay: 0.1s; }
+.diagramas-grid > div:nth-child(2) { animation-delay: 0.2s; }
+.diagramas-grid > div:nth-child(3) { animation-delay: 0.3s; }
+.diagramas-grid > div:nth-child(4) { animation-delay: 0.4s; }
+.diagramas-grid > div:nth-child(5) { animation-delay: 0.5s; }
+.diagramas-grid > div:nth-child(6) { animation-delay: 0.6s; }
+
+/* Efectos para enlaces con mejor feedback */
+.presentation-content a {
+  position: relative;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.presentation-content a::before {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+.presentation-content a:hover::before {
+  width: 100%;
+}
+
+.presentation-content a:hover {
+  color: var(--color-accent);
+  transform: translateY(-1px);
+}
+
+/* Optimización para dispositivos móviles */
+@media (max-width: 768px) {
+  .presentation-content p:hover {
+    transform: none;
+    border-left-color: transparent;
+    padding-left: 0;
+    background: none;
+  }
+  
+  .presentation-content ul li:hover,
+  .presentation-content ol li:hover {
+    transform: translateX(4px);
+    box-shadow: none;
+  }
+  
+  .presentation-content h2:hover {
+    transform: none;
+  }
+  
+  .portada-impacto {
+    animation: none;
+  }
+  
+  .diagramas-grid > div {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Reducir movimiento para usuarios que prefieren menos animación */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .presentation-content p:hover,
+  .presentation-content li:hover,
+  .presentation-content h2:hover,
+  .interface-img:hover,
+  .presentation-nav button:hover {
+    transform: none;
+  }
 }

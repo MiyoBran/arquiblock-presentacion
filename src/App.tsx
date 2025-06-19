@@ -19,9 +19,8 @@ const PDF_URL = import.meta.env.BASE_URL + 'Informe-Final-ArquiBlock.pdf'
 
 const sections = [
 	{
-		title: 'Portada e Introducción',
-		content: (
-			<div className="portada-impacto">
+		title: 'Portada e Introducción',		content: (
+			<div className="portada-impacto portada-impacto-float">
 				<h2>Portada e Introducción</h2>
 				<p>
 					<strong>Trabajo Integrador: ArquiBlock</strong>
